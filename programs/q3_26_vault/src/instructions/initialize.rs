@@ -1,5 +1,5 @@
 use crate::{
-    constants::{STATE, VAULT_SEED},
+    constants::{VAULT_SEED, VAULT_STATE_SEED},
     state::VaultState,
 };
 use anchor_lang::{
@@ -15,7 +15,7 @@ pub struct Initialize<'info> {
     #[account(
         init,
         payer = user,
-        seeds = [STATE, user.key().as_ref()],
+        seeds = [VAULT_STATE_SEED, user.key().as_ref()],
         bump,
         space = VaultState::DISCRIMINATOR.len() + VaultState::INIT_SPACE
     )]

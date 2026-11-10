@@ -208,3 +208,9 @@ All tests passing with LiteSVM:
 - Loading a compiled program into an in-process runtime makes tests fast and fully deterministic.
 - Good tests cover the happy path, the boundaries (exactly the withdrawable amount versus one lamport more), and the attack paths (wrong signer, use after close).
 - Test failures are far easier to debug when the helper prints the program logs on error.
+
+## Non-custodial vault
+
+See [DESIGN.md](DESIGN.md) for the design of a vault with in-kind redemption, and `programs/nc_vault` for the LiteSVM-tested reference implementation.
+
+![All tests passing](./tests_passed2.png)

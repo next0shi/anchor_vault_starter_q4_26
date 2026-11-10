@@ -8,6 +8,8 @@ skip-lint = false
 
 [programs.localnet]
 q3_26_vault = "FCJqwrtEGzE66bLLTCqGgZd1yj1vyyJ6DsAFYjV9bJJP"
+nc_vault = "EUBEXsL7gF5o7nuLbB3EgpmCR284iTBNqo1UERFYkwzp"
+mock_market = "7ux52LojKUM12KicQiCM4iLHCjmVKBnUhtVCBHtCXYQY"
 
 [provider]
 cluster = "localnet"
